@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    {%load static%}
+    <link rel="stylesheet" type="text/css" href="{% static 'CaosNews/css/Estilos.css'%}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{% static 'CaosNews/css/bootstrap.min.css'%} " type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <title>Caos News</title>
+    {%load static%}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <script src="{% static 'CaosNews/js/JavaScript'%}"></script>
+    <link rel="icon" href="{% static 'CaosNews/img/Caoslogo.png'%}">
+      
+  </head>
+
+<body>
+  <video autoplay replay muted loop class="body-i">
+    <source src="{% static 'CaosNews/vid/Noticiafondo.mp4'%}" type="video/mp4">
+</video>
+  <!-- menu navegacion -->
+  <header class="sticky-top backgroundnav">
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="https://www.youtube.com/watch?v=wx-A5Fe-3Vs"><img class="papalogonav" src="{% static 'CaosNews/img/Caoslogo.png'%}"></a>
+      <div class="collapse navbar-collapse" id="opciones"> 
+        <ul class="navbar-nav">
+          <li class="nav-item items"><a href="home">Inicio</a></li>
+          <li class="nav-item items"><a href="form_crearusuario">Registrarse</a></li>
+          <li class="nav-item items"><a href="ver_usuarios">Usuarios</a></li>
+            </ul>
+      </div>
+    </nav>
+  </header>
+  <!--Barra de Promoción-->
+  <marquee class="barra" scrollamount="15">
+    <div class="logo-1">
+        <img src="{% static 'CaosNews/img/Caoslogo.png'%}" alt class="imagen-logo">
+    </div>
+    <a>
+        <strong>!! Noticia de Ultimo Minuto !!</strong>
+        Hay actualmente una suma de 8.328 contagiados por Covid-19 a diario en la Region Metropolitana 
+        <strong>!! Noticia de Ultimo Minuto !!</strong>
+        <div class="logo-1">
+            <img src="{% static 'CaosNews/img/Caoslogo.png'%}" alt class="imagen-logo">
+        </div>  
+        <strong>!! Noticia de Ultimo Minuto !!</strong>
+        Hay actualmente una suma de 8.328 contagiados por Covid-19 a diario en la Region Metropolitana
+        <strong>!! Noticia de Ultimo Minuto !!</strong>
+        <div class="logo-1">
+            <img src="{% static 'CaosNews/img/Caoslogo.png'%}" alt class="imagen-logo">
+        </div>  
+        <strong>!! Noticia de Ultimo Minuto !!</strong>
+        Hay actualmente una suma de 8.328 contagiados por Covid-19 a diario en la Region Metropolitana
+        <strong>!! Noticia de Ultimo Minuto !!</strong>
+        <div class="logo-1">
+            <img src="{% static 'CaosNews/img/Caoslogo.png'%}" alt class="imagen-logo">
+        </div>  
+    </a>
+</marquee>
+<br>
+ 
+  <br>
+  <div class="container">
+    <div id="carousel1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+      <!-- diapositivas -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 imagenescarrusel" src="{% static 'CaosNews/img/Noticia 3.jpg'%}" width="500" height="500"alt="">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 imagenescarrusel" src = "{% static 'CaosNews/img/Noticia 2.jpg'%}"  width="500" height="500"alt="">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 imagenescarrusel" src="{% static 'CaosNews/img/Noticia 1.png'%}" width="500" height="500" alt="">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel1" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <marquee class="barra" scrollamount="15">
+    <div class="logo-1">
+        <img src="{% static 'CaosNews/img/Caoslogo.png'%}" alt class="imagen-logo">
+    </div>
+    <a>
+        <strong>!! Noticia de Ultimo Minuto !!</strong>
+        Hay actualmente una suma de 8.328 contagiados por Covid-19 a diario en la Region Metropolitana
+        <strong>!! Noticia de Ultimo Minuto !!</strong>
+        <div class="logo-1">
+            <img src="{% static 'CaosNews/img/Caoslogo.png'%}" alt class="imagen-logo">
+        </div>  
+        <strong>!! Noticia de Ultimo Minuto !!</strong>
+        Hay actualmente una suma de 8.328 contagiados por Covid-19 a diario en la Region Metropolitana
+        <strong>!! Noticia de Ultimo Minuto !!</strong>
+        <div class="logo-1">
+            <img src="{% static 'CaosNews/img/Caoslogo.png'%}" alt class="imagen-logo">
+        </div>  
+        <strong>!! Noticia de Ultimo Minuto !!</strong>
+        Hay actualmente una suma de 8.328 contagiados por Covid-19 a diario en la Region Metropolitana
+        <strong>!! Noticia de Ultimo Minuto !!</strong>
+        <div class="logo-1">
+            <img src="{% static 'CaosNews/img/Caoslogo.png'%}" alt class="imagen-logo">
+        </div>  
+    </a>
+</marquee>
+  <br><br><br>
+  <h1 class=titulo onmouseover="style.color = 'yellow'" onmouseout="style.color= 'black'">
+    !! Noticias de Ultimo Minuto !!
+    </h1>
+  <br><br><br>
+  <div class="container">
+    <div class="row">
+        <div class="col-md">
+            <div class="InfoIndex">
+                <img class="ImagenIndex" src="{% static 'CaosNews/img/Tarjetanoticia1.jpeg'%}" >
+                <h3 ><b>Se Abre Nuevo Parque</b></h3>
+                <p >Se abrira nuevo parque de atracciones para toda la familia en Barcelona a fines de Noviembre de 2021</p>
+            </div>
+        </div>
+
+        <div class="col-md">
+            <div class="InfoIndex">
+                <img class="ImagenIndex" src="{% static 'CaosNews/img/Tarjetanoticia2.jpg'%}">
+                <h3><b>Cuarentena Total</b></h3>
+                <p>Nuevamente Colina entra en cuarentena debido a un alto nivel de contagio en las ultimas semanas para poder mantener la seguridad de las personas</p> 
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row">
+      <div class="col-md">
+          <div class="InfoIndex">
+              <img class="ImagenIndex" src="{% static 'CaosNews/img/Tarjetanoticia3.jpg'%}" >
+              <h3 ><b>Descubrimiento Sobre el Coronavirus</b></h3>
+              <p >Un laboratorio central de china realiza impresionantes descubrimientos sobre el Covid y se aplican nuevos experimentos y existe la esperanza de que aumente la efectividad de las vacunas</p>
+          </div>
+      </div>
+
+      <div class="col-md">
+          <div class="InfoIndex">
+              <img class="ImagenIndex" src="{% static 'CaosNews/img/Tarjetanoticia4.jpg'%}">
+              <h3><b>PDI Cierra perimetro de una fabrica abandonada en Ñuñoa</b></h3>
+              <p>En la fabrica se hallo un centro de manipulación y fabricación de Metanfetamina y se cerro el perimetro para realizar las investigaciones correspondientes</p> 
+          </div>
+      </div>
+      <br>
+
+
+</div>
+</div>
+
+  <br><br><br><br><br><br><br><br><br><br><br>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+  <div class="colorfooter">
+    <h5>Copyright - Todos los derechos reservados</h5>
+    <a href="http://wa.me/56982183170" target="_blank"><img src="{% static 'CaosNews/img/Icono Wsp PNG.png'%}" class="imgfooter"> </a>
+    <h6>All rights reserved to CAOS NEWS and Fabián Morales</h6>
+  </div>
+</footer>
+
+</html>

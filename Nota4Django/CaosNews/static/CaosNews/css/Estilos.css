@@ -1,0 +1,286 @@
+body{
+background-color: rgb(255, 255, 255)!important;
+
+}
+
+.color{
+  color:#FFFFFF;
+}
+.papalogonav{
+width: 80px;
+height: 80px;
+
+}
+.backgroundnav{
+background-color: rgba(233, 218, 0, 0.945);
+}
+
+nav a{
+  color: rgb(177, 0, 0)!important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.imgfooter{
+  width: 80px;
+  height: 60px;
+}
+
+footer{
+  margin-bottom: -1100px;
+  left: 0;
+  text-align: center;
+  color:#ffffff;
+}
+
+.colorfooter{
+  background-color: rgba(0, 0, 0, 0.411);
+}
+
+.imgcorte{
+  width: 80px;
+  height: 60px;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+.titulo{
+  text-decoration: underline;
+  text-align: center;
+  color:#000000
+}
+
+div.gallery {
+  margin: 5px;
+  border: 0px solid #ccc;
+  float: left;
+  width: 500px;
+}
+            
+div.gallery:hover {
+  border: 0px solid #777;
+}
+            
+div.gallery img {
+  width: 500px;
+  height: 400px;
+}
+            
+div.desc {
+  padding: 15px;
+  text-align: left;
+}
+
+.BordeImagen{
+  border-radius: 20px !important;
+}
+ .PosicionImagen{
+   margin-left: -250px;
+ }
+.ImagenIndex{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+.InfoIndex{
+  text-align: center;
+  color: #ffffff;
+}
+.imagenescarrusel{
+  border-radius: 30px;
+}
+
+
+
+/* Barra de Promo */
+.barra{
+  top: 100px;
+  direction: left;
+  background: white;
+}
+
+.logo-1{
+  display: inline-block; 
+  position: relative; 
+  top: 0px;
+}
+
+.imagen-logo{
+  max-height: 40px;
+}
+
+strong{
+  color: rgb(255, 0, 0);
+}
+
+/* Imagenes para el Menu */
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+div#foto1{
+  width: 300px;
+  height: 200px;
+  background-image: url(../img/combo1A.jpeg);
+}
+
+div#foto2{
+  width: 300px;
+  height: 200px;
+  background-image: url(../img/combo1B.jpeg);
+}
+
+div#foto3{
+  width: 300px;
+  height: 200px;
+  background-image: url(../img/combo1C.jpeg);
+}
+
+div#foto4{
+  width: 300px;
+  height: 200px;
+  background-image: url(../img/combo2A.jpeg);
+}
+
+div#foto5{
+  width: 300px;
+  height: 200px;
+  background-image: url(../img/combo2B.jpeg);
+}
+
+div#foto6{
+  width: 300px;
+  height: 200px;
+  background-image: url(../img/combo2C.jpeg);
+}
+
+div#info{
+  width: 300px;
+  height: 200px;
+  background-color: #ff0000b4;
+  visibility: hidden;
+}
+
+div#foto1:hover div#info{
+  visibility: visible;
+}
+
+div#foto2:hover div#info{
+  visibility: visible;
+}
+
+div#foto3:hover div#info{
+  visibility: visible; 
+}
+
+div#foto4:hover div#info{
+  visibility: visible; 
+}
+
+div#foto5:hover div#info{
+  visibility: visible; 
+}
+
+div#foto6:hover div#info{
+  visibility: visible;
+}
+
+.infomenu{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/*Boton*/
+.buttonCompra{
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  margin-left: 100px;
+  margin-top: 100px !important;
+}
+
+/*Caja de Formulario CSS*/
+
+.cajaformulario{
+  background-color: #0047b165;
+  padding-top: 30px;
+  padding-bottom: 80px;
+border-radius: 15px;
+}
+
+.cajaformulario label{
+  color: rgb(255, 255, 255);
+}
+
+.botonFormulario {
+  background-color: #ffee00;
+  border: none;
+  color:#000000;
+  padding: 20px 30px;
+  text-align: center;
+  float: right;
+}
+
+.contailerAPI{
+  background-color: #ffffff83;
+  font-family: 'Dela Gothic One', cursive !important;
+  border-radius: 30px;
+}
+
+.botonAPI{
+  background-color: #000000;
+  border: none;
+  color:#ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  border-left: 200px;
+}
+
+label.error {
+  color: rgb(0, 0, 0) !important;
+  width: 300px;
+  font-size: 0.8em;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+/*Estilo para el video de Fondo*/
+.body-i{
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+
+  position: fixed;    
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); 
+      
+  z-index: -100;
+
+  background-size: cover;
+  opacity: 0.6;
+}
+/*Color para el texto de error*/
+label.error {
+  color: rgb(255, 230, 0) !important;
+  width: 300px;
+  font-size: 0.8em;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+/* Imagen carro de compra*/
+.carroCompra{
+  float: right !important;
+}

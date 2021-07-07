@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    {%load static%}
+    <link rel="stylesheet" type="text/css" href="{% static 'CaosNews/css/Estilos.css'%}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{% static 'CaosNews/css/bootstrap.min.css'%} " type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <title>Caos News</title>
+    {%load static%}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <script src="{% static 'CaosNews/js/JavaScript'%}"></script>
+    <link rel="icon" href="{% static 'CaosNews/img/Caoslogo.png'%}">
+      
+  </head>
+
+<body>
+    <video autoplay replay muted loop class="body-i">
+        <source src="{% static 'CaosNews/vid/Noticiafondo.mp4'%}" type="video/mp4">
+    </video>
+      <!-- menu navegacion -->
+      <header class="sticky-top backgroundnav">
+        <nav class="navbar navbar-expand-sm navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="https://www.youtube.com/watch?v=wx-A5Fe-3Vs"><img class="papalogonav" src="{% static 'CaosNews/img/Caoslogo.png'%}"></a>
+          <div class="collapse navbar-collapse" id="opciones"> 
+            <ul class="navbar-nav">
+                <li class="nav-item items"><a href="home">Inicio</a></li>
+                <li class="nav-item items"><a href="form_crearusuario">Registrarse</a></li>
+                <li class="nav-item items"><a href="ver_usuarios">Usuarios</a></li>
+                </ul>
+          </div>
+        </nav>
+      </header>
+<div class="container">
+    <table class="table table-striped table-dark">
+        <tr>
+            <td><b>Rut</b></td>
+            <td><b>Imagen</b></td>
+            <td><b>Nombre Completo</b></td>
+            <td><b>Telefono</b></td>
+            <td><b>Dirección</b></td>
+            <td><b>Email</b></td>
+            <td><b>Pais</b></td>
+            <td><b>Modificar Usuario</b></td>
+            <td><b>Eliminar Usuario</b></td>
+        </tr>
+        {%for re in datos %}
+            <tr>
+                <td>{{re.rut_colaborador}}</td>
+                <td><img src="{{re.imagen.url}}" width="70" height="70" alt=""/></td>
+                <td>{{re.nombre_completo}}</td>
+                <td>{{re.telefono}}</td>
+                <td>{{re.dirección}}</td>
+                <td>{{re.email}}</td>
+                <td>{{re.pais}}</td>
+                <td><a href="{% url 'modRegistro' re.rut_colaborador%}" class="btn-danger ">Modificar</a></td>
+                <td><a href="{% url 'borrarconsulta' re.rut_colaborador%}" class="btn ">Eliminar</a></td>
+
+            </tr>
+            {%endfor%}
+    </table>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+  <div class="colorfooter">
+    <h5>Copyright - Todos los derechos reservados</h5>
+    <a href="http://wa.me/56982183170" target="_blank"><img src="{% static 'CaosNews/img/Icono Wsp PNG.png'%}" class="imgfooter"> </a>
+    <h6>All rights reserved to CAOS NEWS and Fabián Morales</h6>
+  </div>
+</footer>
+
+</html>
